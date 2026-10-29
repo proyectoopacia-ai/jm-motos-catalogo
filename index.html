@@ -110,7 +110,6 @@ button{font:inherit;color:inherit;cursor:pointer}
 .ask{display:grid;place-items:center;width:40px;border-radius:6px;background:var(--surface-2);border:1px solid var(--line);color:var(--wa)}
 .ask svg{width:18px;height:18px}
 @media (max-width:520px){.card h3{font-size:1.1rem}.desc{font-size:.84rem}.body{padding:10px}.price{font-size:.88rem}.add{font-size:.86rem;padding:9px 4px}.ask{width:36px}}
-@media (max-width:620px){.bar .sum{flex-basis:100%}.bar .sum b{font-size:1.1rem}.bar .btn{flex:1;justify-content:center}}
 .empty{padding:40px 0;text-align:center;color:var(--muted)}
 
 /* Contact */
@@ -130,12 +129,35 @@ button{font:inherit;color:inherit;cursor:pointer}
 .bar .sum b{font-family:var(--display);font-size:1.3rem;text-transform:uppercase}
 .bar .sum div{color:var(--muted);font-size:.86rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .clear{background:transparent;border:0;color:var(--muted);text-decoration:underline;font-size:.9rem}
+
+@media (max-width:620px){.bar .in{gap:8px}.bar .sum{flex:1 1 100%}.bar .sum b{font-size:1.05rem;white-space:nowrap}.bar .btn{flex:1;justify-content:center;padding:10px 12px}}
+/* Back to top */
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+section[id],header[id],footer[id]{scroll-margin-top:8px}
+.top{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:25;width:48px;height:48px;border-radius:50%;border:0;background:var(--red);color:var(--on-red);display:grid;place-items:center;box-shadow:0 8px 24px -8px rgba(0,0,0,.6);transition:opacity .2s ease,transform .2s ease,bottom .2s ease}
+.top svg{width:22px;height:22px}
+.top.off{opacity:0;transform:translateY(12px);pointer-events:none}
+
+/* Bottom nav (phone) */
+.nav{display:none}
+@media (max-width:760px){
+  .nav{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));position:fixed;left:0;right:0;bottom:0;z-index:22;background:var(--surface);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px);padding-left:env(safe-area-inset-left,0px);padding-right:env(safe-area-inset-right,0px);box-shadow:0 -8px 24px -12px rgba(0,0,0,.5)}
+  .nav a{display:grid;justify-items:center;gap:3px;padding:9px 2px 8px;text-decoration:none;color:var(--muted);font-size:.72rem;font-weight:600;letter-spacing:.02em;position:relative}
+  .nav a svg{width:22px;height:22px}
+  .nav a[aria-current="true"]{color:var(--red-ink)}
+  .nav a[aria-current="true"]::before{content:"";position:absolute;top:0;left:28%;right:28%;height:3px;border-radius:0 0 3px 3px;background:var(--red)}
+  .nav a.wa{color:var(--wa)}
+  .nav .badge{position:absolute;top:4px;left:calc(50% + 6px);min-width:18px;height:18px;padding:0 5px;border-radius:9px;background:var(--red);color:var(--on-red);font-size:.68rem;display:grid;place-items:center;font-variant-numeric:tabular-nums}
+  .bar{bottom:calc(62px + env(safe-area-inset-bottom,0px));padding-bottom:12px;box-shadow:none}
+  .contact{padding-bottom:calc(150px + env(safe-area-inset-bottom,0px))}
+}
 @media (prefers-reduced-motion:no-preference){.card{transition:transform .15s ease}.card:hover{transform:translateY(-2px)}}
 </style>
 </head>
 <body>
 
-<header class="wrap mast">
+<header class="wrap mast" id="inicio">
   <img src="img/logo.png" alt="Logo de J&amp;M Motos">
   <div>
     <h1>J<span>&amp;</span>M Motos</h1>
@@ -153,7 +175,7 @@ button{font:inherit;color:inherit;cursor:pointer}
 
 <div class="wrap"><div class="brands" aria-label="Marcas que atendemos">Repuestos para <em>Bera</em><em>Empire</em><em>Horse</em><em>SBR</em><em>Keeway</em><em>Yamaha</em><em>Bajaj</em><em>Honda</em><em>Suzuki</em></div></div>
 
-<section class="wrap services" aria-labelledby="svc-h">
+<section class="wrap services" id="servicios" aria-labelledby="svc-h">
   <div class="sec-head"><h2 id="svc-h">Servicios</h2><p>Te atendemos en el local.</p></div>
   <div class="svc-grid">
     <article class="svc"><img src="img/kitarrastre.jpg" alt="" loading="lazy"><div class="in"><h3>Venta de repuestos</h3><p>Repuestos, accesorios, luces y cauchos para las motos más comunes de la zona.</p><a class="link" data-svc="Venta de repuestos" href="#" target="_blank" rel="noopener">Consultar un repuesto</a></div></article>
@@ -172,7 +194,7 @@ button{font:inherit;color:inherit;cursor:pointer}
   <p class="empty" id="empty" hidden>No encontramos ese producto en el catálogo. Pregúntanos por WhatsApp; puede que lo tengamos en tienda.</p>
 </section>
 
-<footer class="wrap contact" aria-labelledby="ct-h">
+<footer class="wrap contact" id="contacto" aria-labelledby="ct-h">
   <div class="sec-head"><h2 id="ct-h">Visítanos</h2></div>
   <div class="c-grid">
     <div><h3>WhatsApp y llamadas</h3><p class="big" id="phone">+58 412-4742835</p><button class="copy" id="copy" type="button">Copiar número</button></div>
@@ -181,6 +203,17 @@ button{font:inherit;color:inherit;cursor:pointer}
   </div>
   <p class="foot">Las fotos son de productos reales de la tienda. La disponibilidad cambia todos los días; confirma antes de venir.</p>
 </footer>
+
+
+<button class="top off" id="top" type="button" aria-label="Volver arriba" title="Volver arriba"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+
+<nav class="nav" id="nav" aria-label="Secciones">
+  <a href="#inicio" data-s="inicio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg>Inicio</a>
+  <a href="#servicios" data-s="servicios"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4Z"/></svg>Servicios</a>
+  <a href="#catalogo" data-s="catalogo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Productos<span class="badge" id="nav-n" hidden></span></a>
+  <a href="#contacto" data-s="contacto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>Ubicación</a>
+  <a class="wa" id="nav-wa" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>WhatsApp</a>
+</nav>
 
 <div class="bar" id="bar" hidden>
   <div class="in">
@@ -284,6 +317,8 @@ function render(){
   $("#count").textContent = list.length + (list.length===1?" producto":" productos");
 }
 function bar(){
+  const nb = $("#nav-n"); nb.textContent = order.size; nb.hidden = order.size === 0;
+  setTimeout(() => typeof onScroll === "function" && onScroll(), 0);
   const items = PRODUCTS.filter(p => order.has(p.id));
   $("#bar").hidden = items.length === 0;
   if(!items.length) return;
@@ -307,7 +342,29 @@ $("#copy").addEventListener("click", async () => {
   catch { const r = document.createRange(); r.selectNodeContents($("#phone")); const s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = "Número seleccionado"; }
   setTimeout(()=> b.textContent = "Copiar número", 2000);
 });
-chips(); render(); bar();
+
+// Navegación inferior, sección activa y botón volver arriba
+$("#nav-wa").href = $("#wa-top").href;
+const SECS = ["inicio","servicios","catalogo","contacto"].map(id => document.getElementById(id));
+const navLinks = [...document.querySelectorAll("#nav a[data-s]")];
+const topBtn = $("#top");
+function onScroll(){
+  const y = window.scrollY, mid = window.innerHeight * 0.35;
+  let cur = "inicio";
+  for(const s of SECS){ if(s.getBoundingClientRect().top <= mid) cur = s.id; }
+  if(window.innerHeight + y >= document.documentElement.scrollHeight - 4) cur = "contacto";
+  navLinks.forEach(a => a.setAttribute("aria-current", a.dataset.s === cur));
+  topBtn.classList.toggle("off", y < 500);
+  const nav = $("#nav"), b = $("#bar");
+  let off = 16;
+  if(getComputedStyle(nav).display !== "none") off += nav.offsetHeight;
+  if(!b.hidden) off += b.offsetHeight;
+  topBtn.style.bottom = off + "px";
+}
+topBtn.addEventListener("click", () => window.scrollTo({top:0, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"}));
+window.addEventListener("scroll", onScroll, {passive:true});
+window.addEventListener("resize", onScroll);
+chips(); render(); bar(); onScroll();
 </script>
 
 </body>
