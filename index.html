@@ -100,8 +100,8 @@ button{font:inherit;color:inherit;cursor:pointer}
 .fit{position:absolute;left:8px;top:8px;background:rgba(12,12,14,.82);color:#fff;font-family:var(--display);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.78rem;padding:3px 8px;border-radius:4px}
 .body{padding:12px 12px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
 .cat{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--red-ink);font-weight:600}
-.card h3{font-size:1.28rem;font-weight:700;line-height:1.1}
-.desc{margin:0;color:var(--muted);font-size:.9rem;line-height:1.4}
+.card h3{font-size:1.28rem;font-weight:700;line-height:1.1;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.2em}
+.desc{margin:0;color:var(--muted);font-size:.9rem;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.8em}
 .price{margin-top:auto;padding-top:6px;font-family:var(--display);font-weight:700;font-size:1.05rem;letter-spacing:.04em;color:var(--gold);text-transform:uppercase}
 .price.has{font-size:1.45rem;letter-spacing:0}
 .actions{display:grid;grid-template-columns:1fr auto;gap:6px}
@@ -225,63 +225,13 @@ section[id],header[id],footer[id]{scroll-margin-top:8px}
 
 <script>
 const PHONE = "584124742835";
-// precio: deja null para mostrar "Consulta el precio", o pon un número en USD (ej. 7.99)
-const PRODUCTS = [
-  {id:"chronus", n:"Aceite Chronus Eco Classic 15W-40", c:"Lubricantes", d:"Mineral multigrado API SL. Envase de 946 ml.", fit:null, p:null},
-  {id:"bandol", n:"Aceite Bandol Mineral 15W40", c:"Lubricantes", d:"Aceite mineral API SL. Envase de 946 ml.", fit:null, p:null},
-  {id:"inca1540", n:"Aceite Inca 15W-40 semisintético", c:"Lubricantes", d:"Semisintético para motor de 4 tiempos.", fit:null, p:null},
-  {id:"inca2050", n:"Aceite Inca 20W-50 multigrado", c:"Lubricantes", d:"Multigrado 20W-50.", fit:null, p:null},
-  {id:"sky", n:"Aceite Sky Evolue 15W-40", c:"Lubricantes", d:"SAE 15W-40 para motor de 4 tiempos.", fit:null, p:null},
-  {id:"amazonia", n:"Aceite Amazonia 20W-50", c:"Lubricantes", d:"API SL, SAE 20W-50.", fit:null, p:null},
-  {id:"chainlube", n:"Lubricante de cadena Benf Classic", c:"Lubricantes", d:"Spray de 450 ml para la cadena.", fit:null, p:null},
-  {id:"shampoo", n:"Shampoo Car Mine", c:"Lubricantes", d:"Shampoo para lavar la moto.", fit:null, p:null},
-
-  {id:"cauchosbr", n:"Caucho original SBR", c:"Cauchos", d:"Caucho original de fábrica.", fit:"SBR", p:null},
-  {id:"cauchoexpress", n:"Caucho delantero Express", c:"Cauchos", d:"Caucho delantero original.", fit:"Express", p:null},
-  {id:"cauchosbera", n:"Par de cauchos Bera Kavak", c:"Cauchos", d:"Taco mixto para calle y tierra. Se venden en par.", fit:"Bera", p:null},
-
-  {id:"kitarrastre", n:"Kit de arrastre Hongju Premium 428-H", c:"Repuestos", d:"Kit de relación reforzado, cadena 428.", fit:null, p:null},
-  {id:"bombafreno", n:"Bomba de freno", c:"Repuestos", d:"Bomba de freno delantera con palanca.", fit:null, p:null},
-  {id:"escapehorse", n:"Escape Horse 2", c:"Repuestos", d:"Escape completo cromado.", fit:"Horse", p:null},
-  {id:"escapekeeway", n:"Tubo de escape Keeway original", c:"Repuestos", d:"Tubo de escape original.", fit:"Keeway", p:null},
-  {id:"mandoshorse", n:"Mandos Horse", c:"Repuestos", d:"Comando de luces, cruces, corneta y arranque.", fit:"Horse", p:null},
-  {id:"tacometro", n:"Tacómetro digital SBR", c:"Repuestos", d:"Tablero digital con velocímetro y RPM.", fit:"SBR", p:null},
-  {id:"abrazaderas", n:"Abrazaderas Covalca A1", c:"Repuestos", d:"Alta presión, acero inoxidable.", fit:null, p:null},
-  {id:"asiento", n:"Asiento Bera", c:"Repuestos", d:"Asiento completo con logo Bera.", fit:"Bera", p:null},
-
-  {id:"ledh4", n:"Bombillo LED H4 Benf Classic", c:"Luces", d:"Luz LED para el faro principal.", fit:null, p:null},
-  {id:"barraled", n:"Barra LED de 4 luces", c:"Luces", d:"Luz auxiliar de alta potencia.", fit:null, p:null},
-  {id:"faro", n:"Faro redondo con rejilla", c:"Luces", d:"Faro delantero con protector en X.", fit:null, p:null},
-  {id:"direccionales", n:"Luces de cruce tipo flecha", c:"Luces", d:"Direccionales deportivos, el par.", fit:null, p:null},
-  {id:"luzmuerta", n:"Luz muerta", c:"Luces", d:"Modelos largos y cortos.", fit:null, p:null},
-  {id:"modulosled", n:"Módulos LED", c:"Luces", d:"Tira de módulos LED para decorar o iluminar.", fit:null, p:null},
-  {id:"ojoangel", n:"Ojo de ángel pequeño", c:"Luces", d:"Aro de luz para el faro.", fit:null, p:null},
-
-  {id:"retrosbr", n:"Retrovisor SBR", c:"Accesorios", d:"Retrovisor original para SBR.", fit:"SBR", p:null},
-  {id:"retroax100", n:"Retrovisor AX100 / Horse", c:"Accesorios", d:"Patas largas.", fit:"AX100 · Horse", p:null},
-  {id:"retrovisor", n:"Retrovisor redondo", c:"Accesorios", d:"Retrovisor redondo con brazo cromado.", fit:null, p:null},
-  {id:"barraestab", n:"Barra estabilizadora", c:"Accesorios", d:"Para manubrio. Varios colores y diseños.", fit:null, p:null},
-  {id:"contrapesos", n:"Contrapesos de manubrio", c:"Accesorios", d:"Puntas de manubrio en negro.", fit:null, p:null},
-  {id:"punos", n:"Puños deportivos", c:"Accesorios", d:"Puños de goma en caja.", fit:null, p:null},
-  {id:"cargador", n:"Cargador de teléfono", c:"Accesorios", d:"Cargador USB para moto.", fit:null, p:null},
-  {id:"portaplaca", n:"Porta placa KLR", c:"Accesorios", d:"Porta placa con luz.", fit:"KLR", p:null},
-  {id:"colita", n:"Colita Horse", c:"Accesorios", d:"Colita trasera.", fit:"Horse", p:null},
-  {id:"tapaseriales", n:"Tapa seriales", c:"Accesorios", d:"Para el cuello de la moto. Varios diseños.", fit:null, p:null},
-  {id:"recordatorio", n:"Recordatorio para candado", c:"Accesorios", d:"Cable espiral. Blanco, morado y negro.", fit:null, p:null},
-  {id:"calcoempire", n:"Calcomanía EK Empire", c:"Accesorios", d:"Calcomanía en relieve.", fit:"Empire", p:null},
-  {id:"emblemasbr", n:"Emblema SBR", c:"Accesorios", d:"Emblema en relieve.", fit:"SBR", p:null},
-  {id:"emblemabera", n:"Emblema Bera dorado", c:"Accesorios", d:"Emblema negro con letras doradas.", fit:"Bera", p:null},
-
-  {id:"visoredge", n:"Visor Edge", c:"Cascos y protección", d:"Visor para casco Edge. Varios colores.", fit:null, p:null},
-  {id:"visorcromo", n:"Visor cromado", c:"Cascos y protección", d:"Visor espejado para casco.", fit:null, p:null},
-  {id:"guantes", n:"Guantes largos", c:"Cascos y protección", d:"Guantes de dedo completo.", fit:null, p:null},
-  {id:"pasamontana", n:"Pasamontaña", c:"Cascos y protección", d:"Para caballeros y damas.", fit:null, p:null},
-];
-
-const CATS = ["Todos","Lubricantes","Cauchos","Repuestos","Luces","Accesorios","Cascos y protección"];
+// Los productos se editan desde admin.html y se guardan en products.json
+let PRODUCTS = [];
+let CATS = ["Todos"];
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const $ = s => document.querySelector(s);
 const waUrl = t => "https://wa.me/" + PHONE + "?text=" + encodeURIComponent(t);
-const money = v => "$" + v.toFixed(2);
+const money = v => "$" + Number(v).toFixed(2);
 const norm = s => s.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
 let cat = "Todos", q = "", order = new Set();
 
@@ -293,7 +243,7 @@ const ICON_WA = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"
 function chips(){
   $("#chips").innerHTML = CATS.map(c => {
     const n = c==="Todos" ? PRODUCTS.length : PRODUCTS.filter(p=>p.c===c).length;
-    return `<button type="button" class="chip" aria-pressed="${c===cat}" data-c="${c}">${c}<small>${n}</small></button>`;
+    return `<button type="button" class="chip" aria-pressed="${c===cat}" data-c="${esc(c)}">${esc(c)}<small>${n}</small></button>`;
   }).join("");
 }
 function render(){
@@ -301,15 +251,15 @@ function render(){
   const list = PRODUCTS.filter(p => (cat==="Todos"||p.c===cat) && (!nq || norm(p.n+" "+p.d+" "+(p.fit||"")+" "+p.c).includes(nq)));
   $("#grid").innerHTML = list.map(p => `
     <article class="card">
-      <div class="ph"><img src="img/${p.id}.jpg" alt="${p.n}" loading="lazy">${p.fit?`<span class="fit">${p.fit}</span>`:""}</div>
+      <div class="ph"><img src="${esc(p.img||("img/"+p.id+".jpg"))}" alt="${esc(p.n)}" loading="lazy">${p.fit?`<span class="fit">${esc(p.fit)}</span>`:""}</div>
       <div class="body">
-        <span class="cat">${p.c}</span>
-        <h3>${p.n}</h3>
-        <p class="desc">${p.d}</p>
+        <span class="cat">${esc(p.c)}</span>
+        <h3>${esc(p.n)}</h3>
+        <p class="desc">${esc(p.d)}</p>
         <div class="price ${p.p!=null?"has":""}">${p.p!=null?money(p.p):"Consulta el precio"}</div>
         <div class="actions">
           <button type="button" class="add" data-id="${p.id}" aria-pressed="${order.has(p.id)}">${order.has(p.id)?"✓ Agregado":"Agregar"}</button>
-          <a class="ask" href="${waUrl("Hola J&M Motos, ¿tienen disponible: "+p.n+"? ¿Qué precio tiene?")}" target="_blank" rel="noopener" aria-label="Preguntar por ${p.n} en WhatsApp" title="Preguntar por WhatsApp">${ICON_WA}</a>
+          <a class="ask" href="${waUrl("Hola J&M Motos, ¿tienen disponible: "+p.n+"? ¿Qué precio tiene?")}" target="_blank" rel="noopener" aria-label="Preguntar por ${esc(p.n)} en WhatsApp" title="Preguntar por WhatsApp">${ICON_WA}</a>
         </div>
       </div>
     </article>`).join("");
@@ -364,7 +314,19 @@ function onScroll(){
 topBtn.addEventListener("click", () => window.scrollTo({top:0, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"}));
 window.addEventListener("scroll", onScroll, {passive:true});
 window.addEventListener("resize", onScroll);
-chips(); render(); bar(); onScroll();
+async function load(){
+  try{
+    const r = await fetch("products.json?t=" + Date.now(), {cache:"no-store"});
+    const data = await r.json();
+    PRODUCTS = (data.products || []).filter(p => p.visible !== false);
+    const used = new Set(PRODUCTS.map(p => p.c));
+    CATS = ["Todos", ...(data.categories || []).filter(c => used.has(c)), ...[...used].filter(c => !(data.categories||[]).includes(c))];
+  }catch(e){
+    $("#empty").textContent = "No pudimos cargar el catálogo. Revisa tu conexión y recarga la página.";
+  }
+  chips(); render(); bar(); onScroll();
+}
+load();
 </script>
 
 </body>

@@ -1,0 +1,453 @@
+{
+ "updated": "2026-10-29T23:21:35.912Z",
+ "categories": [
+  "Lubricantes",
+  "Cauchos",
+  "Repuestos",
+  "Luces",
+  "Accesorios",
+  "Cascos y protección"
+ ],
+ "products": [
+  {
+   "id": "chronus",
+   "n": "Aceite Chronus Eco Classic 15W-40",
+   "c": "Lubricantes",
+   "d": "Mineral multigrado API SL. Envase de 946 ml.",
+   "fit": "",
+   "p": null,
+   "img": "img/chronus.jpg",
+   "visible": true
+  },
+  {
+   "id": "bandol",
+   "n": "Aceite Bandol Mineral 15W40",
+   "c": "Lubricantes",
+   "d": "Aceite mineral API SL. Envase de 946 ml.",
+   "fit": "",
+   "p": null,
+   "img": "img/bandol.jpg",
+   "visible": true
+  },
+  {
+   "id": "inca1540",
+   "n": "Aceite Inca 15W-40 semisintético",
+   "c": "Lubricantes",
+   "d": "Semisintético para motor de 4 tiempos.",
+   "fit": "",
+   "p": null,
+   "img": "img/inca1540.jpg",
+   "visible": true
+  },
+  {
+   "id": "inca2050",
+   "n": "Aceite Inca 20W-50 multigrado",
+   "c": "Lubricantes",
+   "d": "Multigrado 20W-50.",
+   "fit": "",
+   "p": null,
+   "img": "img/inca2050.jpg",
+   "visible": true
+  },
+  {
+   "id": "sky",
+   "n": "Aceite Sky Evolue 15W-40",
+   "c": "Lubricantes",
+   "d": "SAE 15W-40 para motor de 4 tiempos.",
+   "fit": "",
+   "p": null,
+   "img": "img/sky.jpg",
+   "visible": true
+  },
+  {
+   "id": "amazonia",
+   "n": "Aceite Amazonia 20W-50",
+   "c": "Lubricantes",
+   "d": "API SL, SAE 20W-50.",
+   "fit": "",
+   "p": null,
+   "img": "img/amazonia.jpg",
+   "visible": true
+  },
+  {
+   "id": "chainlube",
+   "n": "Lubricante de cadena Benf Classic",
+   "c": "Lubricantes",
+   "d": "Spray de 450 ml para la cadena.",
+   "fit": "",
+   "p": null,
+   "img": "img/chainlube.jpg",
+   "visible": true
+  },
+  {
+   "id": "shampoo",
+   "n": "Shampoo Car Mine",
+   "c": "Lubricantes",
+   "d": "Shampoo para lavar la moto.",
+   "fit": "",
+   "p": null,
+   "img": "img/shampoo.jpg",
+   "visible": true
+  },
+  {
+   "id": "cauchosbr",
+   "n": "Caucho original SBR",
+   "c": "Cauchos",
+   "d": "Caucho original de fábrica.",
+   "fit": "SBR",
+   "p": null,
+   "img": "img/cauchosbr.jpg",
+   "visible": true
+  },
+  {
+   "id": "cauchoexpress",
+   "n": "Caucho delantero Express",
+   "c": "Cauchos",
+   "d": "Caucho delantero original.",
+   "fit": "Express",
+   "p": null,
+   "img": "img/cauchoexpress.jpg",
+   "visible": true
+  },
+  {
+   "id": "cauchosbera",
+   "n": "Par de cauchos Bera Kavak",
+   "c": "Cauchos",
+   "d": "Taco mixto para calle y tierra. Se venden en par.",
+   "fit": "Bera",
+   "p": null,
+   "img": "img/cauchosbera.jpg",
+   "visible": true
+  },
+  {
+   "id": "kitarrastre",
+   "n": "Kit de arrastre Hongju Premium 428-H",
+   "c": "Repuestos",
+   "d": "Kit de relación reforzado, cadena 428.",
+   "fit": "",
+   "p": null,
+   "img": "img/kitarrastre.jpg",
+   "visible": true
+  },
+  {
+   "id": "bombafreno",
+   "n": "Bomba de freno",
+   "c": "Repuestos",
+   "d": "Bomba de freno delantera con palanca.",
+   "fit": "",
+   "p": null,
+   "img": "img/bombafreno.jpg",
+   "visible": true
+  },
+  {
+   "id": "escapehorse",
+   "n": "Escape Horse 2",
+   "c": "Repuestos",
+   "d": "Escape completo cromado.",
+   "fit": "Horse",
+   "p": null,
+   "img": "img/escapehorse.jpg",
+   "visible": true
+  },
+  {
+   "id": "escapekeeway",
+   "n": "Tubo de escape Keeway original",
+   "c": "Repuestos",
+   "d": "Tubo de escape original.",
+   "fit": "Keeway",
+   "p": null,
+   "img": "img/escapekeeway.jpg",
+   "visible": true
+  },
+  {
+   "id": "mandoshorse",
+   "n": "Mandos Horse",
+   "c": "Repuestos",
+   "d": "Comando de luces, cruces, corneta y arranque.",
+   "fit": "Horse",
+   "p": null,
+   "img": "img/mandoshorse.jpg",
+   "visible": true
+  },
+  {
+   "id": "tacometro",
+   "n": "Tacómetro digital SBR",
+   "c": "Repuestos",
+   "d": "Tablero digital con velocímetro y RPM.",
+   "fit": "SBR",
+   "p": null,
+   "img": "img/tacometro.jpg",
+   "visible": true
+  },
+  {
+   "id": "abrazaderas",
+   "n": "Abrazaderas Covalca A1",
+   "c": "Repuestos",
+   "d": "Alta presión, acero inoxidable.",
+   "fit": "",
+   "p": null,
+   "img": "img/abrazaderas.jpg",
+   "visible": true
+  },
+  {
+   "id": "asiento",
+   "n": "Asiento Bera",
+   "c": "Repuestos",
+   "d": "Asiento completo con logo Bera.",
+   "fit": "Bera",
+   "p": null,
+   "img": "img/asiento.jpg",
+   "visible": true
+  },
+  {
+   "id": "ledh4",
+   "n": "Bombillo LED H4 Benf Classic",
+   "c": "Luces",
+   "d": "Luz LED para el faro principal.",
+   "fit": "",
+   "p": null,
+   "img": "img/ledh4.jpg",
+   "visible": true
+  },
+  {
+   "id": "barraled",
+   "n": "Barra LED de 4 luces",
+   "c": "Luces",
+   "d": "Luz auxiliar de alta potencia.",
+   "fit": "",
+   "p": null,
+   "img": "img/barraled.jpg",
+   "visible": true
+  },
+  {
+   "id": "faro",
+   "n": "Faro redondo con rejilla",
+   "c": "Luces",
+   "d": "Faro delantero con protector en X.",
+   "fit": "",
+   "p": null,
+   "img": "img/faro.jpg",
+   "visible": true
+  },
+  {
+   "id": "direccionales",
+   "n": "Luces de cruce tipo flecha",
+   "c": "Luces",
+   "d": "Direccionales deportivos, el par.",
+   "fit": "",
+   "p": null,
+   "img": "img/direccionales.jpg",
+   "visible": true
+  },
+  {
+   "id": "luzmuerta",
+   "n": "Luz muerta",
+   "c": "Luces",
+   "d": "Modelos largos y cortos.",
+   "fit": "",
+   "p": null,
+   "img": "img/luzmuerta.jpg",
+   "visible": true
+  },
+  {
+   "id": "modulosled",
+   "n": "Módulos LED",
+   "c": "Luces",
+   "d": "Tira de módulos LED para decorar o iluminar.",
+   "fit": "",
+   "p": null,
+   "img": "img/modulosled.jpg",
+   "visible": true
+  },
+  {
+   "id": "ojoangel",
+   "n": "Ojo de ángel pequeño",
+   "c": "Luces",
+   "d": "Aro de luz para el faro.",
+   "fit": "",
+   "p": null,
+   "img": "img/ojoangel.jpg",
+   "visible": true
+  },
+  {
+   "id": "retrosbr",
+   "n": "Retrovisor SBR",
+   "c": "Accesorios",
+   "d": "Retrovisor original para SBR.",
+   "fit": "SBR",
+   "p": null,
+   "img": "img/retrosbr.jpg",
+   "visible": true
+  },
+  {
+   "id": "retroax100",
+   "n": "Retrovisor AX100 / Horse",
+   "c": "Accesorios",
+   "d": "Patas largas.",
+   "fit": "AX100 · Horse",
+   "p": null,
+   "img": "img/retroax100.jpg",
+   "visible": true
+  },
+  {
+   "id": "retrovisor",
+   "n": "Retrovisor redondo",
+   "c": "Accesorios",
+   "d": "Retrovisor redondo con brazo cromado.",
+   "fit": "",
+   "p": null,
+   "img": "img/retrovisor.jpg",
+   "visible": true
+  },
+  {
+   "id": "barraestab",
+   "n": "Barra estabilizadora",
+   "c": "Accesorios",
+   "d": "Para manubrio. Varios colores y diseños.",
+   "fit": "",
+   "p": null,
+   "img": "img/barraestab.jpg",
+   "visible": true
+  },
+  {
+   "id": "contrapesos",
+   "n": "Contrapesos de manubrio",
+   "c": "Accesorios",
+   "d": "Puntas de manubrio en negro.",
+   "fit": "",
+   "p": null,
+   "img": "img/contrapesos.jpg",
+   "visible": true
+  },
+  {
+   "id": "punos",
+   "n": "Puños deportivos",
+   "c": "Accesorios",
+   "d": "Puños de goma en caja.",
+   "fit": "",
+   "p": null,
+   "img": "img/punos.jpg",
+   "visible": true
+  },
+  {
+   "id": "cargador",
+   "n": "Cargador de teléfono",
+   "c": "Accesorios",
+   "d": "Cargador USB para moto.",
+   "fit": "",
+   "p": null,
+   "img": "img/cargador.jpg",
+   "visible": true
+  },
+  {
+   "id": "portaplaca",
+   "n": "Porta placa KLR",
+   "c": "Accesorios",
+   "d": "Porta placa con luz.",
+   "fit": "KLR",
+   "p": null,
+   "img": "img/portaplaca.jpg",
+   "visible": true
+  },
+  {
+   "id": "colita",
+   "n": "Colita Horse",
+   "c": "Accesorios",
+   "d": "Colita trasera.",
+   "fit": "Horse",
+   "p": null,
+   "img": "img/colita.jpg",
+   "visible": true
+  },
+  {
+   "id": "tapaseriales",
+   "n": "Tapa seriales",
+   "c": "Accesorios",
+   "d": "Para el cuello de la moto. Varios diseños.",
+   "fit": "",
+   "p": null,
+   "img": "img/tapaseriales.jpg",
+   "visible": true
+  },
+  {
+   "id": "recordatorio",
+   "n": "Recordatorio para candado",
+   "c": "Accesorios",
+   "d": "Cable espiral. Blanco, morado y negro.",
+   "fit": "",
+   "p": null,
+   "img": "img/recordatorio.jpg",
+   "visible": true
+  },
+  {
+   "id": "calcoempire",
+   "n": "Calcomanía EK Empire",
+   "c": "Accesorios",
+   "d": "Calcomanía en relieve.",
+   "fit": "Empire",
+   "p": null,
+   "img": "img/calcoempire.jpg",
+   "visible": true
+  },
+  {
+   "id": "emblemasbr",
+   "n": "Emblema SBR",
+   "c": "Accesorios",
+   "d": "Emblema en relieve.",
+   "fit": "SBR",
+   "p": null,
+   "img": "img/emblemasbr.jpg",
+   "visible": true
+  },
+  {
+   "id": "emblemabera",
+   "n": "Emblema Bera dorado",
+   "c": "Accesorios",
+   "d": "Emblema negro con letras doradas.",
+   "fit": "Bera",
+   "p": null,
+   "img": "img/emblemabera.jpg",
+   "visible": true
+  },
+  {
+   "id": "visoredge",
+   "n": "Visor Edge",
+   "c": "Cascos y protección",
+   "d": "Visor para casco Edge. Varios colores.",
+   "fit": "",
+   "p": null,
+   "img": "img/visoredge.jpg",
+   "visible": true
+  },
+  {
+   "id": "visorcromo",
+   "n": "Visor cromado",
+   "c": "Cascos y protección",
+   "d": "Visor espejado para casco.",
+   "fit": "",
+   "p": null,
+   "img": "img/visorcromo.jpg",
+   "visible": true
+  },
+  {
+   "id": "guantes",
+   "n": "Guantes largos",
+   "c": "Cascos y protección",
+   "d": "Guantes de dedo completo.",
+   "fit": "",
+   "p": null,
+   "img": "img/guantes.jpg",
+   "visible": true
+  },
+  {
+   "id": "pasamontana",
+   "n": "Pasamontaña",
+   "c": "Cascos y protección",
+   "d": "Para caballeros y damas.",
+   "fit": "",
+   "p": null,
+   "img": "img/pasamontana.jpg",
+   "visible": true
+  }
+ ]
+}
