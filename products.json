@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30T15:56:18.001Z",
+ "updated": "2026-10-30T16:01:57.562Z",
  "categories": [
   "Lubricantes",
   "Cauchos",
@@ -9,6 +9,76 @@
   "Cascos y protección"
  ],
  "products": [
+  {
+   "id": "led-3-lupas",
+   "n": "Led 3 lupas",
+   "c": "Luces",
+   "d": "",
+   "fit": "",
+   "p": null,
+   "img": "img/led-3-lupas-mvv5tsw0.jpg",
+   "visible": true
+  },
+  {
+   "id": "espejo-de-tx-lechuza",
+   "n": "Espejo de tx/lechuza",
+   "c": "Accesorios",
+   "d": "",
+   "fit": "",
+   "p": null,
+   "img": "img/espejo-de-tx-lechuza-mvv5sv84.jpg",
+   "visible": true
+  },
+  {
+   "id": "espejo-bera-kavak",
+   "n": "Espejo bera kavak",
+   "c": "Accesorios",
+   "d": "",
+   "fit": "",
+   "p": null,
+   "img": "img/espejo-bera-kavak-mvv5rzne.jpg",
+   "visible": true
+  },
+  {
+   "id": "disco-de-coche-marca-hongju",
+   "n": "Disco de coche marca hongju",
+   "c": "Repuestos",
+   "d": "",
+   "fit": "",
+   "p": null,
+   "img": "img/disco-de-coche-marca-hongju-mvv5r21l.jpg",
+   "visible": true
+  },
+  {
+   "id": "carburador-pz27",
+   "n": "Carburador PZ27",
+   "c": "Repuestos",
+   "d": "",
+   "fit": "",
+   "p": null,
+   "img": "img/carburador-pz27-mvv5pzhq.jpg",
+   "visible": true
+  },
+  {
+   "id": "parilla",
+   "n": "Parilla",
+   "c": "Accesorios",
+   "d": "",
+   "fit": "",
+   "p": null,
+   "img": "img/parilla-mvv5owkp.jpg",
+   "visible": true
+  },
+  {
+   "id": "burro-posa-pie-original-ek-expre",
+   "n": "Burro posa pie original ek expres",
+   "c": "Accesorios",
+   "d": "",
+   "fit": "",
+   "p": null,
+   "img": "img/burro-posa-pie-original-ek-expre-mvv5o3qn.jpg",
+   "visible": true
+  },
   {
    "id": "corneta-doble-horse",
    "n": "Corneta doble horse",
