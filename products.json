@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30T15:43:19.152Z",
+ "updated": "2026-10-30T15:45:38.199Z",
  "categories": [
   "Lubricantes",
   "Cauchos",
@@ -9,6 +9,16 @@
   "Cascos y protección"
  ],
  "products": [
+  {
+   "id": "barra-estabilizadora",
+   "n": "Barra estabilizadora",
+   "c": "Accesorios",
+   "d": "",
+   "fit": "",
+   "p": null,
+   "img": "img/barra-estabilizadora-mvv57oiw.jpg",
+   "visible": true
+  },
   {
    "id": "chronus",
    "n": "Aceite Chronus Eco Classic 15W-40",
@@ -231,7 +241,7 @@
   },
   {
    "id": "direccionales",
-   "n": "Luces de cruce tipo flecha",
+   "n": "Luces de cruce de bera kavak",
    "c": "Luces",
    "d": "Direccionales deportivos, el par.",
    "fit": "",
@@ -381,7 +391,7 @@
   },
   {
    "id": "calcoempire",
-   "n": "Calcomanía EK Empire",
+   "n": "Placa decorativa ek",
    "c": "Accesorios",
    "d": "Calcomanía en relieve.",
    "fit": "Empire",
@@ -391,7 +401,7 @@
   },
   {
    "id": "emblemasbr",
-   "n": "Emblema SBR",
+   "n": "Placa decorativa sbr",
    "c": "Accesorios",
    "d": "Emblema en relieve.",
    "fit": "SBR",
