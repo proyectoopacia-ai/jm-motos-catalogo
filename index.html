@@ -69,8 +69,10 @@ button{font:inherit;color:inherit;cursor:pointer}
 .sec-head h2{font-size:clamp(1.8rem,4.5vw,2.6rem);font-weight:800;text-transform:uppercase}
 .sec-head p{margin:0;color:var(--muted)}
 .services{padding-block:34px 10px}
-.svc-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
-@media (max-width:1060px){.svc-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.svc-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+.svc-grid .svc{grid-column:span 2}
+.svc-grid .svc:nth-child(n+4){grid-column:span 3}
+@media (max-width:1100px){.svc-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.svc-grid .svc,.svc-grid .svc:nth-child(n+4){grid-column:auto}.svc-grid .svc:first-child{grid-column:1 / -1;min-height:210px}}
 .svc{position:relative;border-radius:10px;overflow:hidden;min-height:250px;display:flex;align-items:flex-end;background:var(--surface)}
 .svc img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.9)}
 .svc::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,12,0) 25%,rgba(10,10,12,.92) 78%)}
@@ -79,7 +81,7 @@ button{font:inherit;color:inherit;cursor:pointer}
 @media (max-width:1060px){.svc h3{font-size:1.7rem}}
 .svc p{margin:0;font-size:.95rem;color:#d6d3d0}
 .svc .link{justify-self:start;font-weight:600;color:#fff;background:var(--red);border-radius:6px;padding:8px 14px;text-decoration:none;font-size:.92rem}
-@media (max-width:820px){.svc-grid{grid-template-columns:1fr}.svc{min-height:200px}}
+@media (max-width:620px){.svc-grid{grid-template-columns:1fr}.svc{min-height:200px}}
 
 /* Mantenimiento */
 .mant{margin-top:22px;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:28px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px;scroll-margin-top:12px}
@@ -116,6 +118,19 @@ button{font:inherit;color:inherit;cursor:pointer}
 .mant-cta{display:grid;gap:6px}
 .mant-cta .btn{justify-content:center}
 .mant-cta small{color:var(--muted);font-size:.84rem}
+
+/* Pulitura: antes y después */
+.pul{margin-top:16px}
+.ba{display:grid;gap:10px;min-width:0;align-content:start}
+.ba-pair{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.ba-pair figure{margin:0;position:relative;border-radius:10px;overflow:hidden;aspect-ratio:4/5;max-width:100%;background:var(--surface-2)}
+.ba-pair img{width:100%;height:100%;object-fit:cover;display:block}
+.ba-pair figcaption{position:absolute;left:8px;top:8px;font-family:var(--display);font-weight:800;letter-spacing:.1em;text-transform:uppercase;font-size:.85rem;padding:3px 10px;border-radius:4px;background:rgba(12,12,14,.82);color:#f5f3f0}
+.ba-pair figure.after figcaption{background:var(--red);color:#fff}
+.ba-tabs{display:flex;gap:8px;flex-wrap:wrap}
+.ba-tabs button{border:1px solid var(--line);background:var(--bg);border-radius:999px;padding:6px 14px;font-weight:500;font-size:.9rem}
+.ba-tabs button[aria-pressed="true"]{background:var(--red);border-color:var(--red);color:var(--on-red)}
+.slogan-big{font-family:var(--display);font-weight:800;font-size:clamp(1.4rem,3vw,1.8rem);text-transform:uppercase;color:var(--gold);line-height:1.05;margin:0}
 
 /* Filters */
 .catalog{padding-block:34px 40px}
@@ -218,13 +233,14 @@ section[id],header[id],footer[id]{scroll-margin-top:8px}
   <div class="svc-grid">
     <article class="svc"><img src="img/kitarrastre.jpg" alt="" loading="lazy"><div class="in"><h3>Venta de repuestos</h3><p>Repuestos, accesorios, luces y cauchos para las motos más comunes de la zona.</p><a class="link" data-svc="Venta de repuestos" href="#" target="_blank" rel="noopener">Consultar un repuesto</a></div></article>
     <article class="svc"><img src="img/serv-mant-carburador.jpg" alt="" loading="lazy"><div class="in"><h3>Ajuste y mantenimiento</h3><p>Carburador, cadena, ejes y tornillería. Incluye lavado de regalo.</p><a class="link link-in" href="#mantenimiento">Ver qué incluye</a></div></article>
+    <article class="svc"><img src="img/serv-pul-empire-despues.jpg" alt="" loading="lazy"><div class="in"><h3>Pulitura</h3><p>Deja tu moto como de agencia. Mira el antes y el después.</p><a class="link link-in" href="#pulitura">Ver resultados</a></div></article>
     <article class="svc"><img src="img/chronus.jpg" alt="" loading="lazy"><div class="in"><h3>Cambio de aceite</h3><p>Elige tu aceite en la tienda y te lo cambiamos en el momento.</p><a class="link" data-svc="Cambio de aceite" href="#" target="_blank" rel="noopener">Pedir cambio de aceite</a></div></article>
-    <article class="svc"><img src="img/serv-lavado-empire.jpg" alt="" loading="lazy"><div class="in"><h3>Autolavado de motos</h3><p>Lava tu moto mientras compras tus repuestos.</p><a class="link" data-svc="Autolavado de motos" href="#" target="_blank" rel="noopener">Reservar lavado</a></div></article>
+    <article class="svc"><img src="img/shampoo.jpg" alt="" loading="lazy"><div class="in"><h3>Autolavado de motos</h3><p>Lava tu moto mientras compras tus repuestos.</p><a class="link" data-svc="Autolavado de motos" href="#" target="_blank" rel="noopener">Reservar lavado</a></div></article>
   </div>
   <div class="mant" id="mantenimiento">
     <div class="gal">
       <figure class="gal-main" style="margin:0"><img id="gal-img" src="img/serv-mant-carburador.jpg" alt="Ajuste de carburador"><figcaption id="gal-cap">Ajuste de carburador</figcaption></figure>
-      <div class="thumbs" id="thumbs" role="group" aria-label="Fotos de trabajos realizados"><button type="button" data-src="img/serv-mant-carburador.jpg" data-cap="Ajuste de carburador" aria-pressed="true" aria-label="Ajuste de carburador"><img src="img/serv-mant-carburador.jpg" alt="" loading="lazy"></button><button type="button" data-src="img/serv-mant-cadena.jpg" data-cap="Cadena y piñón ajustados" aria-pressed="false" aria-label="Cadena y piñón ajustados"><img src="img/serv-mant-cadena.jpg" alt="" loading="lazy"></button><button type="button" data-src="img/serv-mant-pinon.jpg" data-cap="Limpieza de tapa piñón" aria-pressed="false" aria-label="Limpieza de tapa piñón"><img src="img/serv-mant-pinon.jpg" alt="" loading="lazy"></button><button type="button" data-src="img/serv-mant-rodamiento.jpg" data-cap="Rodamiento engrasado" aria-pressed="false" aria-label="Rodamiento engrasado"><img src="img/serv-mant-rodamiento.jpg" alt="" loading="lazy"></button><button type="button" data-src="img/serv-mant-eje.jpg" data-cap="Engrase de ejes" aria-pressed="false" aria-label="Engrase de ejes"><img src="img/serv-mant-eje.jpg" alt="" loading="lazy"></button><button type="button" data-src="img/serv-mant-portacorona.jpg" data-cap="Revisión del porta corona" aria-pressed="false" aria-label="Revisión del porta corona"><img src="img/serv-mant-portacorona.jpg" alt="" loading="lazy"></button><button type="button" data-src="img/serv-mant-corona.jpg" data-cap="Corona y gomas del porta corona" aria-pressed="false" aria-label="Corona y gomas del porta corona"><img src="img/serv-mant-corona.jpg" alt="" loading="lazy"></button><button type="button" data-src="img/serv-lavado-bera.jpg" data-cap="Lavado de regalo al terminar" aria-pressed="false" aria-label="Lavado de regalo al terminar"><img src="img/serv-lavado-bera.jpg" alt="" loading="lazy"></button></div>
+      <div class="thumbs" id="thumbs" role="group" aria-label="Fotos de trabajos realizados"><button type="button" data-src="img/serv-mant-carburador.jpg" data-cap="Ajuste de carburador" aria-pressed="true" aria-label="Ajuste de carburador"><img src="img/serv-mant-carburador.jpg" alt="" loading="lazy"></button><button type="button" data-src="img/serv-mant-cadena.jpg" data-cap="Cadena y piñón ajustados" aria-pressed="false" aria-label="Cadena y piñón ajustados"><img src="img/serv-mant-cadena.jpg" alt="" loading="lazy"></button><button type="button" data-src="img/serv-mant-pinon.jpg" data-cap="Limpieza de tapa piñón" aria-pressed="false" aria-label="Limpieza de tapa piñón"><img src="img/serv-mant-pinon.jpg" alt="" loading="lazy"></button><button type="button" data-src="img/serv-mant-rodamiento.jpg" data-cap="Rodamiento engrasado" aria-pressed="false" aria-label="Rodamiento engrasado"><img src="img/serv-mant-rodamiento.jpg" alt="" loading="lazy"></button><button type="button" data-src="img/serv-mant-eje.jpg" data-cap="Engrase de ejes" aria-pressed="false" aria-label="Engrase de ejes"><img src="img/serv-mant-eje.jpg" alt="" loading="lazy"></button><button type="button" data-src="img/serv-mant-portacorona.jpg" data-cap="Revisión del porta corona" aria-pressed="false" aria-label="Revisión del porta corona"><img src="img/serv-mant-portacorona.jpg" alt="" loading="lazy"></button><button type="button" data-src="img/serv-mant-corona.jpg" data-cap="Corona y gomas del porta corona" aria-pressed="false" aria-label="Corona y gomas del porta corona"><img src="img/serv-mant-corona.jpg" alt="" loading="lazy"></button></div>
     </div>
     <div class="mant-info">
       <div><p class="eyebrow">Servicio en el taller</p><h3>Ajuste y mantenimiento</h3></div>
@@ -237,6 +253,30 @@ section[id],header[id],footer[id]{scroll-margin-top:8px}
       <div class="moto-f"><label for="m-moto">Tu moto (marca y modelo)</label><input id="m-moto" type="text" maxlength="40" placeholder="Ej.: Bera SBR 150" autocomplete="off"></div>
       <div class="mant-cta">
         <a class="btn btn-wa" id="m-send" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>Agendar mantenimiento por WhatsApp</a>
+        <small>Te respondemos con el precio y el día disponible.</small>
+      </div>
+    </div>
+  </div>
+  <div class="mant pul" id="pulitura">
+    <div class="ba">
+      <div class="ba-pair" id="ba-pair">
+        <figure><img id="ba-before" src="img/serv-pul-empire-antes.jpg" alt="Empire roja antes de la pulitura, pintura opaca"><figcaption>Antes</figcaption></figure>
+        <figure class="after"><img id="ba-after" src="img/serv-pul-empire-despues.jpg" alt="Empire roja después de la pulitura, pintura con brillo"><figcaption>Después</figcaption></figure>
+      </div>
+      <div class="ba-tabs" id="ba-tabs" role="group" aria-label="Elegir moto">
+        <button type="button" aria-pressed="true" data-m="empire" data-name="Empire roja">Empire roja</button>
+        <button type="button" aria-pressed="false" data-m="bera" data-name="Bera negra">Bera negra</button>
+      </div>
+    </div>
+    <div class="mant-info">
+      <div><p class="eyebrow">Servicio de estética</p><h3>Pulitura de moto</h3></div>
+      <p class="slogan-big">Deja tu moto como de agencia</p>
+      <p class="lead">Pulimos la pintura del tanque y las tapas para quitarle lo opaco y devolverle el brillo. Las fotos son de motos pulidas en J&amp;M, antes y después del trabajo.</p>
+      <p class="opt-h">Ideal si buscas</p>
+      <ul class="inc"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7"/></svg><span>Pintura opaca o manchada por el sol</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7"/></svg><span>Antes de vender tu moto, para que se vea mejor</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7"/></svg><span>Para que tu moto vuelva a brillar como el primer día</span></li></ul>
+      <div class="moto-f"><label for="p-moto">Tu moto (marca, modelo y color)</label><input id="p-moto" type="text" maxlength="40" placeholder="Ej.: Empire roja" autocomplete="off"></div>
+      <div class="mant-cta">
+        <a class="btn btn-wa" id="p-send" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>Agendar pulitura por WhatsApp</a>
         <small>Te respondemos con el precio y el día disponible.</small>
       </div>
     </div>
@@ -391,6 +431,24 @@ function mantMsg(){
 document.querySelectorAll('input[name="mopt"]').forEach(i => i.addEventListener("change", mantMsg));
 $("#m-moto").addEventListener("input", mantMsg);
 mantMsg();
+
+// Pulitura: antes / después y mensaje
+$("#ba-tabs").addEventListener("click", e => {
+  const b = e.target.closest("button"); if(!b) return;
+  const m = b.dataset.m, name = b.dataset.name;
+  $("#ba-before").src = `img/serv-pul-${m}-antes.jpg`; $("#ba-before").alt = name + " antes de la pulitura, pintura opaca";
+  $("#ba-after").src = `img/serv-pul-${m}-despues.jpg`; $("#ba-after").alt = name + " después de la pulitura, pintura con brillo";
+  document.querySelectorAll("#ba-tabs button").forEach(x => x.setAttribute("aria-pressed", x === b));
+});
+function pulMsg(){
+  const moto = $("#p-moto").value.trim();
+  let t = "Hola J&M Motos, quiero agendar el servicio de Pulitura.";
+  if (moto) t += "\nMoto: " + moto;
+  t += "\n\n¿Qué día tienen disponible y cuál es el precio?";
+  $("#p-send").href = waUrl(t);
+}
+$("#p-moto").addEventListener("input", pulMsg);
+pulMsg();
 
 async function load(){
   try{
