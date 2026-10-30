@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30T16:09:07.669Z",
+ "updated": "2026-10-30T16:12:34.807Z",
  "categories": [
   "Lubricantes",
   "Cauchos",
@@ -9,6 +9,46 @@
   "Cascos y protección"
  ],
  "products": [
+  {
+   "id": "pantalla-md",
+   "n": "Pantalla md",
+   "c": "Accesorios",
+   "d": "",
+   "fit": "",
+   "p": null,
+   "img": "img/pantalla-md-mvv67ieg.jpg",
+   "visible": true
+  },
+  {
+   "id": "limpia-cadena-benf",
+   "n": "Limpia cadena benf",
+   "c": "Lubricantes",
+   "d": "",
+   "fit": "",
+   "p": null,
+   "img": "img/limpia-cadena-benf-mvv66lrv.jpg",
+   "visible": true
+  },
+  {
+   "id": "retrovisor-original-klr",
+   "n": "Retrovisor original klr",
+   "c": "Accesorios",
+   "d": "",
+   "fit": "",
+   "p": null,
+   "img": "img/retrovisor-original-klr-mvv65ju2.jpg",
+   "visible": true
+  },
+  {
+   "id": "bolsas-para-el-asiento",
+   "n": "Bolsas para el asiento",
+   "c": "Accesorios",
+   "d": "",
+   "fit": "",
+   "p": null,
+   "img": "img/bolsas-para-el-asiento-mvv64dcg.jpg",
+   "visible": true
+  },
   {
    "id": "aceite-hidraulico-cajentin-y-caj",
    "n": "Aceite hidráulico /cajentin y cajas auto",
