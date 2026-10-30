@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30T15:49:51.747Z",
+ "updated": "2026-10-30T15:56:18.001Z",
  "categories": [
   "Lubricantes",
   "Cauchos",
@@ -9,6 +9,66 @@
   "Cascos y protección"
  ],
  "products": [
+  {
+   "id": "corneta-doble-horse",
+   "n": "Corneta doble horse",
+   "c": "Accesorios",
+   "d": "",
+   "fit": "",
+   "p": null,
+   "img": "img/corneta-doble-horse-mvv5mk3c.jpg",
+   "visible": true
+  },
+  {
+   "id": "faro-sbr",
+   "n": "Faro sbr",
+   "c": "Accesorios",
+   "d": "",
+   "fit": "",
+   "p": null,
+   "img": "img/faro-sbr-mvv5lm55.jpg",
+   "visible": true
+  },
+  {
+   "id": "faro-de-ek-expres",
+   "n": "Faro de ek expres",
+   "c": "Accesorios",
+   "d": "",
+   "fit": "",
+   "p": null,
+   "img": "img/faro-de-ek-expres-mvv5kr1n.jpg",
+   "visible": true
+  },
+  {
+   "id": "carcasa-de-faro-sbr-bera",
+   "n": "Carcasa de faro sbr bera",
+   "c": "Accesorios",
+   "d": "",
+   "fit": "",
+   "p": null,
+   "img": "img/carcasa-de-faro-sbr-bera-mvv5jyjr.jpg",
+   "visible": true
+  },
+  {
+   "id": "cadena-de-oring-kendo",
+   "n": "Cadena de oring kendo",
+   "c": "Accesorios",
+   "d": "",
+   "fit": "",
+   "p": null,
+   "img": "img/cadena-de-oring-kendo-mvv5iwu7.jpg",
+   "visible": true
+  },
+  {
+   "id": "carcasa-de-tacometro-sbr",
+   "n": "Carcasa de tacómetro sbr",
+   "c": "Accesorios",
+   "d": "",
+   "fit": "",
+   "p": null,
+   "img": "img/carcasa-de-tacometro-sbr-mvv5hd3h.jpg",
+   "visible": true
+  },
   {
    "id": "tacometro-digital-bera-kavak",
    "n": "Tacómetro digital bera kavak",
