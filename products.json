@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30T16:01:57.562Z",
+ "updated": "2026-10-30T16:09:07.669Z",
  "categories": [
   "Lubricantes",
   "Cauchos",
@@ -9,6 +9,76 @@
   "Cascos y protección"
  ],
  "products": [
+  {
+   "id": "aceite-hidraulico-cajentin-y-caj",
+   "n": "Aceite hidráulico /cajentin y cajas auto",
+   "c": "Lubricantes",
+   "d": "",
+   "fit": "",
+   "p": null,
+   "img": "img/aceite-hidraulico-cajentin-y-caj-mvv62hkn.jpg",
+   "visible": true
+  },
+  {
+   "id": "contra-pesa-de-sbr-ek",
+   "n": "Contra pesa de sbr/ek",
+   "c": "Accesorios",
+   "d": "",
+   "fit": "",
+   "p": null,
+   "img": "img/contra-pesa-de-sbr-ek-mvv616t2.jpg",
+   "visible": true
+  },
+  {
+   "id": "parte-interna-de-casco-edge",
+   "n": "Parte interna de casco edge",
+   "c": "Cascos y protección",
+   "d": "",
+   "fit": "",
+   "p": null,
+   "img": "img/parte-interna-de-casco-edge-mvv5zuaz.jpg",
+   "visible": true
+  },
+  {
+   "id": "posa-pie-ek-expres-marca-hongju",
+   "n": "Posa pie ek expres marca hongju",
+   "c": "Accesorios",
+   "d": "",
+   "fit": "",
+   "p": null,
+   "img": "img/posa-pie-ek-expres-marca-hongju-mvv5ydbk.jpg",
+   "visible": true
+  },
+  {
+   "id": "bombillo-led-2-contactos",
+   "n": "Bombillo led 2 contactos",
+   "c": "Accesorios",
+   "d": "",
+   "fit": "",
+   "p": null,
+   "img": "img/bombillo-led-2-contactos-mvv5xb89.jpg",
+   "visible": true
+  },
+  {
+   "id": "bombillo-benf-m8",
+   "n": "Bombillo benf m8",
+   "c": "Luces",
+   "d": "",
+   "fit": "",
+   "p": null,
+   "img": "img/bombillo-benf-m8-mvv5wl75.jpg",
+   "visible": true
+  },
+  {
+   "id": "tapa-cadena-enduro-lechuza-kavak",
+   "n": "Tapa cadena enduro/lechuza,kavak/mustang",
+   "c": "Accesorios",
+   "d": "",
+   "fit": "",
+   "p": null,
+   "img": "img/tapa-cadena-enduro-lechuza-kavak-mvv5vfae.jpg",
+   "visible": true
+  },
   {
    "id": "led-3-lupas",
    "n": "Led 3 lupas",
