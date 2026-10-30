@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30T15:45:38.199Z",
+ "updated": "2026-10-30T15:49:51.747Z",
  "categories": [
   "Lubricantes",
   "Cauchos",
@@ -9,6 +9,56 @@
   "Cascos y protección"
  ],
  "products": [
+  {
+   "id": "tacometro-digital-bera-kavak",
+   "n": "Tacómetro digital bera kavak",
+   "c": "Accesorios",
+   "d": "",
+   "fit": "",
+   "p": null,
+   "img": "img/tacometro-digital-bera-kavak-mvv5eadj.jpg",
+   "visible": true
+  },
+  {
+   "id": "slaider-de-teflon",
+   "n": "Slaider de teflon",
+   "c": "Accesorios",
+   "d": "",
+   "fit": "",
+   "p": null,
+   "img": "img/slaider-de-teflon-mvv5d0j1.jpg",
+   "visible": true
+  },
+  {
+   "id": "manguera-covalca-alta-presion-ga",
+   "n": "Manguera covalca alta presión gasolina",
+   "c": "Lubricantes",
+   "d": "",
+   "fit": "",
+   "p": null,
+   "img": "img/manguera-covalca-alta-presion-ga-mvv5bzvh.jpg",
+   "visible": true
+  },
+  {
+   "id": "cubre-seriales",
+   "n": "Cubre seriales",
+   "c": "Accesorios",
+   "d": "",
+   "fit": "",
+   "p": null,
+   "img": "img/cubre-seriales-mvv5as2m.jpg",
+   "visible": true
+  },
+  {
+   "id": "luz-muerta-amarilla",
+   "n": "Luz muerta amarilla",
+   "c": "Accesorios",
+   "d": "",
+   "fit": "",
+   "p": null,
+   "img": "img/luz-muerta-amarilla-mvv5a5hi.jpg",
+   "visible": true
+  },
   {
    "id": "barra-estabilizadora",
    "n": "Barra estabilizadora",
