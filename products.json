@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T23:21:35.912Z",
+ "updated": "2026-10-30T15:43:19.152Z",
  "categories": [
   "Lubricantes",
   "Cauchos",
@@ -23,7 +23,7 @@
    "id": "bandol",
    "n": "Aceite Bandol Mineral 15W40",
    "c": "Lubricantes",
-   "d": "Aceite mineral API SL. Envase de 946 ml.",
+   "d": "Aceite mineral API SL. Envase de 946 ml. Aceite uso de carro.",
    "fit": "",
    "p": null,
    "img": "img/bandol.jpg",
@@ -43,7 +43,7 @@
    "id": "inca2050",
    "n": "Aceite Inca 20W-50 multigrado",
    "c": "Lubricantes",
-   "d": "Multigrado 20W-50.",
+   "d": "Multigrado 20W-50. Aceite para carro.",
    "fit": "",
    "p": null,
    "img": "img/inca2050.jpg",
@@ -51,9 +51,9 @@
   },
   {
    "id": "sky",
-   "n": "Aceite Sky Evolue 15W-40",
+   "n": "Aceite Sky Evolue 15W-40 semisintético",
    "c": "Lubricantes",
-   "d": "SAE 15W-40 para motor de 4 tiempos.",
+   "d": "SAE 15W-40 para carro.",
    "fit": "",
    "p": null,
    "img": "img/sky.jpg",
@@ -63,7 +63,7 @@
    "id": "amazonia",
    "n": "Aceite Amazonia 20W-50",
    "c": "Lubricantes",
-   "d": "API SL, SAE 20W-50.",
+   "d": "API SL, SAE 20W-50. Aceite multigrado para carro.",
    "fit": "",
    "p": null,
    "img": "img/amazonia.jpg",
@@ -421,7 +421,7 @@
   },
   {
    "id": "visorcromo",
-   "n": "Visor cromado",
+   "n": "Visor de casco tipo espejo edge",
    "c": "Cascos y protección",
    "d": "Visor espejado para casco.",
    "fit": "",
@@ -431,7 +431,7 @@
   },
   {
    "id": "guantes",
-   "n": "Guantes largos",
+   "n": "Mangas",
    "c": "Cascos y protección",
    "d": "Guantes de dedo completo.",
    "fit": "",
@@ -441,7 +441,7 @@
   },
   {
    "id": "pasamontana",
-   "n": "Pasamontaña",
+   "n": "Mangas",
    "c": "Cascos y protección",
    "d": "Para caballeros y damas.",
    "fit": "",
