@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T13:30:36.178Z",
+ "updated": "2026-10-31T13:48:50.230Z",
  "categories": [
   "Lubricantes",
   "Cauchos",
@@ -9,6 +9,26 @@
   "Cascos y protección"
  ],
  "products": [
+  {
+   "id": "mandos-de-bera-kavak",
+   "n": "Mandos de bera kavak",
+   "c": "Accesorios",
+   "d": "",
+   "fit": "",
+   "p": null,
+   "img": "img/mandos-de-bera-kavak-mvwgimkx.jpg",
+   "visible": true
+  },
+  {
+   "id": "visor-edge-tornasol",
+   "n": "Visor edge tornasol",
+   "c": "Cascos y protección",
+   "d": "",
+   "fit": "",
+   "p": null,
+   "img": "img/visor-edge-tornasol-mvwgfnw1.jpg",
+   "visible": true
+  },
   {
    "id": "caucho-trasero-original-expres",
    "n": "Caucho trasero original exprés",
