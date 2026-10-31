@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T13:23:24.809Z",
+ "updated": "2026-10-31T13:25:40.848Z",
  "categories": [
   "Lubricantes",
   "Cauchos",
@@ -391,7 +391,7 @@
   },
   {
    "id": "cauchosbr",
-   "n": "Caucho original SBR",
+   "n": "Caucho delantero original SBR",
    "c": "Cauchos",
    "d": "Caucho original de fábrica.",
    "fit": "SBR",
@@ -401,7 +401,7 @@
   },
   {
    "id": "cauchoexpress",
-   "n": "Caucho delantero Express",
+   "n": "Caucho delantero original Express",
    "c": "Cauchos",
    "d": "Caucho delantero original.",
    "fit": "Express",
@@ -423,7 +423,7 @@
    "id": "kitarrastre",
    "n": "Kit de arrastre Hongju Premium 428-H",
    "c": "Repuestos",
-   "d": "Kit de relación reforzado, cadena 428.",
+   "d": "Kit de relación reforzado, cadena 428. Sirve para moto 150.",
    "fit": "",
    "p": null,
    "img": "img/kitarrastre.jpg",
@@ -491,7 +491,7 @@
   },
   {
    "id": "asiento",
-   "n": "Asiento Bera",
+   "n": "Asiento Brf",
    "c": "Repuestos",
    "d": "Asiento completo con logo Bera.",
    "fit": "Bera",
@@ -521,7 +521,7 @@
   },
   {
    "id": "faro",
-   "n": "Faro redondo con rejilla",
+   "n": "Faro sbr redondo con rejilla",
    "c": "Luces",
    "d": "Faro delantero con protector en X.",
    "fit": "",
@@ -621,7 +621,7 @@
   },
   {
    "id": "punos",
-   "n": "Puños deportivos",
+   "n": "Defensas blancas",
    "c": "Accesorios",
    "d": "Puños de goma en caja.",
    "fit": "",
