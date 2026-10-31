@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T13:25:40.848Z",
+ "updated": "2026-10-31T13:30:36.178Z",
  "categories": [
   "Lubricantes",
   "Cauchos",
@@ -9,6 +9,26 @@
   "Cascos y protección"
  ],
  "products": [
+  {
+   "id": "caucho-trasero-original-expres",
+   "n": "Caucho trasero original exprés",
+   "c": "Cauchos",
+   "d": "",
+   "fit": "",
+   "p": null,
+   "img": "img/caucho-trasero-original-expres-mvwfv76q.jpg",
+   "visible": true
+  },
+  {
+   "id": "punos-acelerador-ek-rk",
+   "n": "Puños acelerador ek rk",
+   "c": "Accesorios",
+   "d": "",
+   "fit": "",
+   "p": null,
+   "img": "img/punos-acelerador-ek-rk-mvwfs7nn.jpg",
+   "visible": true
+  },
   {
    "id": "pantalla-md",
    "n": "Pantalla md",
