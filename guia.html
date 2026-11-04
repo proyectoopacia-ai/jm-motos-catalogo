@@ -9,8 +9,13 @@
 <meta property="og:title" content="Guía del catálogo J&amp;M Motos">
 <meta property="og:description" content="Cómo funciona el catálogo digital de J&amp;M Motos.">
 <meta property="og:image" content="https://proyectoopacia-ai.github.io/jm-motos-catalogo/img/og.jpg">
-<link rel="icon" type="image/png" href="favicon.png">
-<link rel="apple-touch-icon" href="img/icon-180.png">
+<link rel="icon" type="image/png" href="icons/guia-192.png">
+<link rel="manifest" href="manifest-guia.webmanifest">
+<link rel="apple-touch-icon" href="icons/guia-180.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Guía J&amp;M">
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>Guía del catálogo J&amp;M Motos</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -172,6 +177,7 @@ section+section{border-top:1px solid var(--line)}
 @media (max-width:820px){.faq{grid-template-columns:1fr}}
 .close{padding-block:48px 72px;text-align:left}
 .close p{max-width:60ch;color:var(--muted);margin-top:12px}
+.install-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
 </style>
 </head>
 <body>
@@ -183,7 +189,8 @@ section+section{border-top:1px solid var(--line)}
       <p class="eyebrow" style="margin-top:22px">Guía del catálogo digital</p>
       <h1>Tu tienda abierta en el <span>teléfono</span> de cada cliente</h1>
       <p class="lede">El catálogo es una página con tus productos, tus servicios y tu WhatsApp. Lo compartes con un enlace y el cliente arma su pedido solo. A ti te llega listo para responder.</p>
-      <div class="summary"><span class="pill">44 productos con foto real</span><span class="pill">3 servicios</span><span class="pill">Pedidos directo a tu WhatsApp</span><span class="pill">No hay que instalar nada</span></div>
+      <div class="summary"><span class="pill">Más de 70 productos con foto real</span><span class="pill">5 servicios</span><span class="pill">Regalos desde el exterior</span><span class="pill">Pedidos directo a tu WhatsApp</span><span class="pill">No hay que instalar nada</span></div>
+      <div class="install-row"><span data-install data-label="Instalar esta guía" hidden></span><a class="pwa-btn" href="./" style="text-decoration:none">Abrir el catálogo para instalarlo</a></div>
     </div>
     <div class="phone" aria-label="Vista del catálogo en un teléfono">
       <div class="screen">
@@ -358,8 +365,9 @@ Aceite Chronus: $__
 
 <section class="close"><div class="wrap">
   <h2 class="sec-title">Todo para tu moto en un solo lugar</h2>
-  <p>El catálogo ya está listo con 44 productos y los servicios de la tienda. Con tus fotos nuevas y el autolavado, lo completamos en la próxima actualización.</p>
+  <p>El catálogo ya tiene más de 70 productos, cinco servicios y regalos desde el exterior. Instálalo en tu teléfono y edítalo cuando quieras desde el panel de administrador.</p>
 </div></section>
 
+<script src="pwa.js" defer></script>
 </body>
 </html>
