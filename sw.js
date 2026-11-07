@@ -1,7 +1,7 @@
 // Service worker de J&M Motos: abre rápido y funciona con conexión lenta.
 // Páginas y products.json: primero la red (para ver siempre lo último) y, si falla, la copia guardada.
 // Fotos e íconos: primero la copia guardada y se actualiza en segundo plano.
-const VERSION = "jm-v1";
+const VERSION = "jm-v2";
 const SHELL = ["./", "index.html", "guia.html", "admin.html", "products.json", "pwa.js",
   "img/logo.png", "favicon.png", "icons/catalogo-192.png", "icons/guia-192.png", "icons/admin-192.png"];
 
